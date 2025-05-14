@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header {
+    border: 2px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    margin-top: 20px;
+
+
+    border-radius: 50px;
+
+    
+    
+}
+
+.navbar {
+    width: 100%;
+    padding: 0 20PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    background-color: #0D0D0D;
+    border-radius: 50px;
+
+}
+
+
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #0D0D0D;
+    font-weight: 600;
+    font-size: 1.3rem;
+    list-style: none;
+} 
+
+
+/* inicio */
+
+
+.inicio {
+    height: 70vh;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 12px;
+    gap: 20px;
+    display: flex;
+}
+.Text-inicio {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    
+}
+.Text-inicio h1 {
+    font-size: 15vw;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    
+}
+.Text-inicio h2 {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 2vw;
+    font-weight: 200;
+
+
+}
+
+
+
+.img-inico {
+    
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-inicio {
+    display: flex;
+    margin-top: 20px;
+   
+
+
+}
+
+.btn-inicio a{
+    padding: 15px 50px;
+    color: #0D0D0D;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;
+    border-radius: 12px;
+
+    
+}
+
+.galeria {
+    
+    gap: 40px;
+    width: 100%;
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+
+.galeria h2 {
+    font-size: 15vw;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+
+   
+}
+
+.box-img {
+    display: flex;
+    overflow-y: hidden;
+    gap: 20px;
+    scrollbar-width: none;
+    
+    padding: 10px;
+
+}
+
+.box-img img {
+    height: 300px;
+    width: 200px;
+    border: 3px solid #0D0D0D;
+    box-shadow: 4px 4px #0D0D0D;
+    border-radius: 16px;
+    
+
+}
+
+/* sobre mi */
+.sobremi {
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    display: flex;
+
+}
+
+.sobremi-box1 {
+    display: flex;
+    height: 100%;
+    width: 55%;
+}
+
+.info-personal {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 80px;
+
+}
+
+.info-personal h2 {
+    font-size: 10vw;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+
+
+}
+
+.info-personal p {
+    font-size: 24px;
+
+}
+
+
+.sobremi-box2 {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    gap: 40px;
+
+}
+
+.box-infomaty {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.box-experiencia {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    border: 3px solid #0D0D0D;
+    box-shadow: 4px 4px #0D0D0D;
+    border-radius: 16px;
+    display: flex;
+    
+}
+
+.card-maty {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    border: 3px solid #0D0D0D;
+    box-shadow: 4px 4px #0D0D0D;
+    border-radius: 16px;
+}
+
+
+
+.nombre-maty {
+    border-bottom: 2px solid #0D0D0D;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+
+}
+
+.img-maty {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    background-image: url(imagenes/Foto\ maty.png);
+    background-size: cover;
+    background-position: center;
+    border-radius:  0 0 12px 12px;
+}
+
+.nombre-maty h2 {
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    font-size: 1.8rem;
+    
+}
+
+
+.box-experiencia {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 20px;
+}
+
+.box-tituloexperiencia {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-tituloexperiencia i {
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 4px #0D0D0D;
+    background-color: #F2E205;
+    font-size: 50px;
+   
+    
+}
+
+.box-experiencia h2 {
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+
+.trabajos {
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;
+    border-radius: 12px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    
+
+}
+
+.trabajos h3 {
+
+}
+
+.trabajos p {
+    
+
+}
+
+
+
+
+
+
+
+
+/* Servicio */
+
+.servicio {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border: 3px solid #0D0D0D;
+    box-shadow: 4px 4px #0D0D0D;
+    border-radius: 12px;
+   
+}
+
+.titulo-servicio {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 12px;
+
+
+}
+
+.titulo-servicio h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+}
+
+.titulo-servicio p {
+    font-size: 24px;
+}
+
+.container {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 12px;
+    text-align: center;
+}
+
+.box-servicio {
+    height: 70%;
+    width: 50%;
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;
+    border-radius: 12px;
+    display: flex;
+
+}
+
+.content i {
+    font-size: 64px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+/* Preguntas frecuentes */
+
+.preguntas {
+}
+
+/*Comentarios*/
+
+.comentarios {
+}
+
+/*footer*/
+
+.footer {
+}
