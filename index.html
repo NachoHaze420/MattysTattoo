@@ -10,24 +10,34 @@
     
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="">M</a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Servicio</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
 
+     <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">M</a>
+                <button class="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="navbar-menu">
+                   <li><a href="#inicio">Inicio</a></li>
+                   <li><a href="#galeria">Galeria</a></li>
+                   <li><a href="#sobremi">Sobre mi</a></li>
+                   <li><a href="#servicio">servicio</a></li>
+                   <li><a href="#contacto">Contacto</a></li>
+                   <i class='bx bx-cart'></i>
+                </ul>
+                
+            </div>
+
+
+        </nav>
     </header>
 
+
     <main>
-        <section class="inicio">
+        <section class="inicio" id="inicio">
             <div class="Text-inicio">
                 <h1>MATTYS <br>TATTOO</h1>
                 <h2>Estilo Tradicional</h2>
@@ -35,15 +45,10 @@
                     <a href="">Reservar</a>
                 </div>
             </div>
-            <div class="img-inico">
-                <img src="imagenes/Foto inicio.png" alt="" style="max-width: 100%; height: auto;">
-
-            </div>
- 
 
         </section>
 
-        <section class="galeria">
+        <section class="galeria" id="galeria">
             <h2>Galeria</h2>
             <div class="box-img">
                 <img src="imagenes/Tattoo01.png" alt="">
@@ -60,7 +65,7 @@
 
         </section>
 
-        <section class="sobremi">
+        <section class="sobremi" id="sobremi">
 
             <div class="sobremi-box1">
 
@@ -76,7 +81,7 @@
                     <div class="card-maty">
 
                        <div class="nombre-maty">
-                        <h2>Matias Lamoroux</h2>
+                        <h2>Matias Lamouroux</h2>
                        
                        </div>
 
@@ -119,7 +124,13 @@
 
         </section>
 
-        <section class="servicio">
+        <section class="servicio" id="servicio">
+
+            <div class="titulo-servicio">
+
+             <h2>Como reservo?</h2>
+             <p>Contáctame por WhatsApp o enviame un mensaje directo en Instagram. Contame tu idea, tamaño, estilo, ubicación en el cuerpo y cualquier referencia que tengas. Si aún no tenés claro el diseño, ¡podemos charlarlo!</p>
+            </div>
 
             
             <div class="container">
@@ -158,16 +169,11 @@
         
             </div>
 
-            <div class="titulo-servicio">
-
-            <h2>Como reservo?</h2>
-            <p>Contáctame por WhatsApp o enviame un mensaje directo en Instagram. Contame tu idea, tamaño, estilo, ubicación en el cuerpo y cualquier referencia que tengas. Si aún no tenés claro el diseño, ¡podemos charlarlo!</p>
-            </div>
+      
 
 
         </section>
-
-        
+    
         <section class="preguntas">
 
         </section>
@@ -176,8 +182,32 @@
         </section>
         
     </main>
-    <footer class="footer">
+
+
+    <footer class="footer" id="contacto">
+
+        <div class="box-footer">
+            <h2 class="logo-footer">MATTYS<br>TATTOO</h2>
+            <div class="redes">
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-pinterest-alt'></i>
+
+            </div>
+            <ul class="navbar-footer">
+                   <li><a href="#inicio">Inicio</a></li>
+                   <li><a href="#galeria">Galeria</a></li>
+                   <li><a href="#sobremi">Sobre mi</a></li>
+                   <li><a href="#servicio">servicio</a></li>
+                   <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="licencia">
+                <p>&copy; Malibux Design - Derechos reservados.</p>
+            </div>
+        </div>
+
 
     </footer>
+
+<script src="app.js"></script>
 </body>
 </html>
