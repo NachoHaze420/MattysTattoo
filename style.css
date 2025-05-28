@@ -37,6 +37,7 @@ main {
     width: 100%;
     justify-content: center;        
     align-items: center;
+    
 }
 .navbar {
     display: flex;
@@ -49,6 +50,8 @@ main {
     background:#f2f2f2;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10px);
+    border-bottom: 3px solid #0D0D0D;
+    background-color: #BF05F2;
     z-index: 999;
 }
 .navbar-container {
@@ -66,7 +69,7 @@ main {
     font-weight: 900;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #0D0D0D;
+    border: 3px solid #0D0D0D;
     padding: 5px 8px;
     border-radius: 50px;
 }
@@ -208,35 +211,28 @@ main {
     margin-top: 20px;
     padding: 10px 0;
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 400;
 }
 
-
-
-.img-inico {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 .btn-inicio {
     display: flex;
     margin-top: 20px;
-   
+    
 
 
 }
 
 .btn-inicio a{
     padding: 10px 30px;
-    color: #0D0D0D;
+    color: #f2f2f2;
     font-weight: 600;
     font-size: 1.3rem;
     text-decoration: none;
     border: 3px solid #0D0D0D;
     box-shadow: 2px 2px #0D0D0D;
     border-radius: 12px;
+    background-color: #BF05F2;
 
     
 }
@@ -258,9 +254,11 @@ main {
     box-shadow: 2px 2px #0D0D0D;
     display: flex;
     flex-direction: column;
-    text-align: right;
     padding: 12px;
     border-radius: 12px;
+    background-color: #BF05F2;
+    
+    
     
 
 }
@@ -270,8 +268,7 @@ main {
     font-weight: bold;
     font-style: normal;
     line-height: 0.8;
-
-   
+    color: #f2f2f2;
 }
 
 .box-img {
@@ -298,6 +295,9 @@ main {
       
         height: auto;
         
+    }
+    .galeria h2 {
+        font-size: 82px;
     }
 
   
@@ -367,14 +367,17 @@ main {
 .box-experiencia {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 350px;
     width: 60%;
     border: 3px solid #0D0D0D;
     box-shadow: 4px 4px #0D0D0D;
     border-radius: 16px;
-    display: flex;
+    background-color: #BF05F2;
+    padding: 12px;
+    gap: 20px;
     
 }
+
 
 .card-maty {
     display: flex;
@@ -384,6 +387,7 @@ main {
     border: 3px solid #0D0D0D;
     box-shadow: 4px 4px #0D0D0D;
     border-radius: 16px;
+    
 }
 
 
@@ -414,16 +418,11 @@ main {
     line-height: 1;
     font-size: 22px;
     
+    
 }
 
 
-.box-experiencia {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    gap: 20px;
-    height: 350px;
-}
+
 
 .box-tituloexperiencia {
     display: flex;
@@ -432,12 +431,12 @@ main {
 }
 
 .box-tituloexperiencia i {
-    margin: 0 10px;
+
     padding: 5px;
     border-radius: 50px;
     border: 2px solid #0D0D0D;
     box-shadow: 1px 3px #0D0D0D;
-    background-color: #F2E205;
+    background-color: #abfa54;
     font-size: 35px;
    
     
@@ -448,6 +447,7 @@ main {
     font-weight: bold;
     font-style: normal;
     line-height: 0.8;
+    color: #f2f2f2;
 
 }
 
@@ -459,6 +459,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 8px;
+    background-color: #abfa54;
     
 
 }
@@ -468,8 +469,8 @@ main {
 }
 
 .trabajos p {
+    color: #0D0D0D;
     
-
 }
 
 
@@ -485,8 +486,13 @@ main {
     }
 
     .info-personal h2 {
-        font-size: 80px;
+        font-size: 52px;
     }
+
+    .info-personal p {
+    font-size: 22px;
+
+}
 
     .sobremi-box1 {
         width: 100%;
@@ -541,6 +547,7 @@ main {
     gap: 25px;
     height: 100%;
     padding: 12px;
+    order: 2;
 
 
 }
@@ -565,6 +572,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    order: 1;
 }
 .content {
     height: 100%;
@@ -584,6 +592,8 @@ main {
     box-shadow: 2px 2px #0D0D0D;
     border-radius: 12px;
     display: flex;
+    background-color: #BF05F2;
+    color: #f2f2f2;
 
 }
 
@@ -616,6 +626,7 @@ main {
         grid-template-columns: auto auto;
         gap: 20px;
         width: 100%;
+        order: 2;
       
         
  
@@ -628,16 +639,18 @@ main {
     .titulo-servicio {
         width: 100%;
         gap: 5px;
+        order: 1;
         
     }
 
     .titulo-servicio h2 {
+        font-size: 48px;
 
 
     }
 
     .titulo-servicio p {
-    font-size: 20px;
+    font-size: 22px;
 
 }
 
@@ -651,7 +664,109 @@ main {
 
 /*Comentarios*/
 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.comentarios { 
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+    margin: 0 10px;
+    padding-bottom: 40px;
+
+    
+}
+
+.titulocomentario {
+
+    text-align: left;
+    
+}
+
+.titulocomentario h2 {
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    
+
+}
+.comentarios-slide {
+    display: flex;
+    gap: 20px;
+    animation: 18s slide infinite linear;
+}
+
+
+.contenedorcomentarios {
+    display: flex;
+    gap: 20px;
+}
+.boxcomentarios {
+    display: flex;
+    flex-direction: column;
+    background-color: #abfa54;
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;  
+    flex-shrink: 0;
+    width: 350px;
+}
+
+.estrellas {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.boxcomentarios h3 {
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+    font-weight: 500;
+    border-bottom: 3px solid #0D0D0D;
+    text-align: left;
+
+}
+
+.perfil {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.perfil img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.nombreperfil h4 {
+    text-align: left;
+    padding-bottom: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nombreperfil h5 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 .comentarios {
+    text-align: center;
 }
 
 /*footer*/
