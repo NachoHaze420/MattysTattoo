@@ -51,7 +51,7 @@ main {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10px);
     border-bottom: 3px solid #0D0D0D;
-    background-color: #BF05F2;
+    background-color: #abfa54;
     z-index: 999;
 }
 .navbar-container {
@@ -256,7 +256,7 @@ main {
     flex-direction: column;
     padding: 12px;
     border-radius: 12px;
-    background-color: #BF05F2;
+    background-color: #abfa54;
     
     
     
@@ -268,7 +268,8 @@ main {
     font-weight: bold;
     font-style: normal;
     line-height: 0.8;
-    color: #f2f2f2;
+    color: #0D0D0D;
+    margin-top: 10px;
 }
 
 .box-img {
@@ -372,7 +373,7 @@ main {
     border: 3px solid #0D0D0D;
     box-shadow: 4px 4px #0D0D0D;
     border-radius: 16px;
-    background-color: #BF05F2;
+    background-color: #abfa54;
     padding: 12px;
     gap: 20px;
     
@@ -387,6 +388,7 @@ main {
     border: 3px solid #0D0D0D;
     box-shadow: 4px 4px #0D0D0D;
     border-radius: 16px;
+    background-color: #abfa54;
     
 }
 
@@ -399,6 +401,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 6px;
+    
 
 }
 
@@ -431,12 +434,12 @@ main {
 }
 
 .box-tituloexperiencia i {
-
+    display: flex;
     padding: 5px;
     border-radius: 50px;
     border: 2px solid #0D0D0D;
     box-shadow: 1px 3px #0D0D0D;
-    background-color: #abfa54;
+    background-color: #BF05F2;
     font-size: 35px;
    
     
@@ -447,7 +450,7 @@ main {
     font-weight: bold;
     font-style: normal;
     line-height: 0.8;
-    color: #f2f2f2;
+    color: #0D0D0D;
 
 }
 
@@ -459,17 +462,18 @@ main {
     display: flex;
     flex-direction: column;
     padding: 8px;
-    background-color: #abfa54;
+    background-color: #BF05F2;
     
 
 }
 
 .trabajos h3 {
+    color: #f2f2f2;
 
 }
 
 .trabajos p {
-    color: #0D0D0D;
+    color: #f2f2f2;
     
 }
 
@@ -592,8 +596,8 @@ main {
     box-shadow: 2px 2px #0D0D0D;
     border-radius: 12px;
     display: flex;
-    background-color: #BF05F2;
-    color: #f2f2f2;
+    background-color: #abfa54;
+    color: #0D0D0D;
 
 }
 
@@ -659,7 +663,140 @@ main {
 
 /* Preguntas frecuentes */
 
-.preguntas {
+.preguntasfrecuentes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+    
+}
+
+.box-preguntas {
+    
+    display: flex;
+    flex-direction: column;
+}
+.img-preguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-preguntas img {
+    height: 480px;
+    
+}
+
+.titulopreguntas {
+    font-size: 52px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    
+    
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    background-color: #abfa54;
+    border-radius: 12px;
+    padding: 20px;
+    border: 3px solid #0D0D0D;
+    box-shadow: 2px 2px #0D0D0D;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.pregunta h2 {
+    font-size: 1rem;
+    
+}
+
+.pregunta i {
+    
+    font-size: 22px;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: #BF05F2;
+    color: #f2f2f2;
+    border: 3px solid #0D0D0D;
+}
+
+.bx-chevron-up{
+    transform: rotate(180deg);
+}
+
+.respuesta {
+    width: 90%;
+    max-height: 0;
+    overflow: hidden;
+    
+}
+
+.respuesta P {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.faq.active .respuesta {
+    max-height: 300px;
+}
+
+.faq.active .pregunta i {
+    transform: rotate(0deg);
+}
+
+@media (max-width:880px) {
+    .img-preguntas img {
+        height: 400px;
+
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .preguntasfrecuentes {
+        height: 80vh;
+        padding: 0 20px;
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+    .pregunta {
+        
+    }
+    .pregunta h2 {
+        font-size: 1rem;
+        
+        
+    }
+
+    .pregunta i {
+        padding: 1px;
+    }
+
+    .respuesta P {
+        font-size: 0.9rem;
+        font-weight: 400;
+        
+    }
+
+    .titulopreguntas {
+        font-size: 42px;
+        line-height: 1;
+    }
+
 }
 
 /*Comentarios*/
@@ -729,6 +866,10 @@ main {
     display: flex;
     justify-content: right;
     margin-bottom: 20px;
+}
+
+.estrellas i {
+    color: #BF05F2;
 }
 
 .boxcomentarios h3 {

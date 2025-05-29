@@ -7,3 +7,15 @@ navbarToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
 
 });
+
+/*preguntas frecuentes*/
+
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+
+    });
+
+});
